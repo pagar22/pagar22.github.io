@@ -26,11 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    - name: Run CI 🚰
+      run: npm ci
     - name: Build 🏋️
-    - run: npm run build
+      run: npm run build
     - name: Test ❤️‍🔥
-    - run: npm test
+      run: npm test
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
