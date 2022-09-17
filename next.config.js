@@ -5,7 +5,9 @@ const nextConfig = {
   images: {
     loader: "akamai",
     path: "",
-  }
+  },
+  basePath: "/pagar22.github.io",
+  assetPrefix: "/pagar22.github.io",
 }
 
 module.exports = nextConfig

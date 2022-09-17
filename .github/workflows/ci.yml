@@ -31,6 +31,7 @@ jobs:
         run: yarn build
       - name: Export 🛳️
         run: yarn export
+      - run: touch ./out/.nojekyll
       #- name: Test ❤️‍🔥
       # run: npm test
       - name: Deploy 🚀
