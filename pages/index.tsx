@@ -13,7 +13,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Hello, I'm <span className={"text-indigo-500"}><a href="https://www.linkedin.com/in/pagar22/" target={"_blank"}>Aaryan</a></span>!</h1>
+        <h1 className={styles.title}>Hello, I&apos;m <span className={"text-indigo-500"}>
+          <a href="https://www.linkedin.com/in/pagar22/" target={"_blank"} rel="noreferrer">Aaryan</a></span>!</h1>
       </main>
     </div>
   )
