@@ -34,8 +34,8 @@ jobs:
       - name: Export Next Project 🛳️
         run: yarn export
       - run: touch ./out/.nojekyll
-      #- name: Test ❤️‍🔥
-      # run: npm test
+      - run: mkdir -p /home/runner/.npm
+        continue-on-error: true
       - name: Deploy on GH Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

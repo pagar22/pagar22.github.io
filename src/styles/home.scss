@@ -1,0 +1,11 @@
+.container {
+  @apply min-w-full px-8;
+}
+
+.main {
+  @apply min-h-screen py-16 px-0 flex flex-col justify-center items-center;
+}
+
+.title {
+  @apply m-0 leading-7 text-7xl whitespace-nowrap;
+}

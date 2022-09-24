@@ -1,19 +1,31 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
+  const style = {
+    minHeight: "100vh",
+    padding: "4rem 0",
+    flex: "1",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    border: "1px solid red",
+  };
+  const container = {
+    padding: "0 2rem",
+  };
   return (
-    <div className={styles.container}>
+    <div className={"container"}>
       <Head>
         <title>Aaryan Pagar</title>
         <link rel="icon" type="image/x-icon" href="ramen.ico" />
         <meta name="description" content="Aaryan Pagar's Personal Portfolio" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className={"main"}>
+        <h1 className={"title"}>
           Hello, I&apos;m{" "}
           <span className={"text-indigo-500"}>
             <a
