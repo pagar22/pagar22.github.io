@@ -1,8 +1,5 @@
 .navbar {
-  @apply p-12 self-center;
-  @apply flex flex-row justify-evenly align-middle;
-}
-
-.nav-text {
-  @apply text-lg;
+  @apply py-12 px-6 mx-20 self-center;
+  @apply flex flex-row justify-evenly items-center;
+  @apply border-b-2 border-gray-200;
 }

@@ -11,14 +11,14 @@ export const NavBarItems: NavLinkProps[] = [
   },
   {
     link: "/",
-    children: <img className="border-2 border-blue-300" src="/ramen.ico" />,
+    children: <img width={"40px"} src="/ramen.ico" alt="index" />,
   },
   {
     link: "/read",
     children: "Read",
   },
   {
-    link: "/joke",
-    children: "Joke",
+    link: "/jokes",
+    children: "Jokes",
   },
 ];
