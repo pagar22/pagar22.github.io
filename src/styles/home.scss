@@ -1,11 +1,12 @@
-.container {
-  @apply min-w-full px-8;
+.base-layout {
+  @apply min-w-full h-screen p-2 overflow-auto;
 }
 
 .main {
-  @apply min-h-screen py-16 px-0 flex flex-col justify-center items-center;
+  @apply flex flex-1 flex-col justify-center items-center;
+  @apply h-4/5 p-2;
 }
 
 .title {
-  @apply m-0 leading-7 text-7xl whitespace-nowrap;
+  @apply m-0 leading-7 text-6xl whitespace-nowrap;
 }
