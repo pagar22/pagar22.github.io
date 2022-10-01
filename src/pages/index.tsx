@@ -3,19 +3,6 @@ import Head from "next/head";
 import { BaseLayout } from "../layouts/BaseLayout";
 
 const Home: NextPage = () => {
-  const style = {
-    minHeight: "100vh",
-    padding: "4rem 0",
-    flex: "1",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    border: "1px solid red",
-  };
-  const container = {
-    padding: "0 2rem",
-  };
   return (
     <>
       <Head>
@@ -27,7 +14,7 @@ const Home: NextPage = () => {
         <main className={"main"}>
           <h1 className={"title"}>
             Hello, I&apos;m{" "}
-            <span className={"text-indigo-500"}>
+            <span className={"text-gradient"}>
               <a
                 href="https://www.linkedin.com/in/pagar22/"
                 target={"_blank"}

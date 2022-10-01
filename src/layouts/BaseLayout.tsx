@@ -1,5 +1,4 @@
-import { NavBarItems } from "../../utils/NavBarItems";
-import { NavBar } from "../components/NavBar";
+import { NavBar } from "../components/features/NavBar";
 
 interface BaseLayoutProps {
   className?: string;
@@ -9,7 +8,7 @@ interface BaseLayoutProps {
 export const BaseLayout = ({ className, children }: BaseLayoutProps) => {
   return (
     <div className={`${className} base-layout`}>
-      <NavBar items={NavBarItems} />
+      <NavBar />
       {children}
     </div>
   );

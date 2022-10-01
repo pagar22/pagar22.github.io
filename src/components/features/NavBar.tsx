@@ -1,6 +1,6 @@
-import { NavLinkProps } from "../src/components/theme/NavLink";
+import { NavLinkProps, NavLink } from "../theme/NavLink";
 
-export const NavBarItems: NavLinkProps[] = [
+const NavBarItems: NavLinkProps[] = [
   {
     link: "/about",
     children: "About",
@@ -22,3 +22,13 @@ export const NavBarItems: NavLinkProps[] = [
     children: "Jokes",
   },
 ];
+
+export const NavBar = () => {
+  return (
+    <div className="navbar">
+      {NavBarItems?.map((item) => {
+        return <NavLink link={item.link}>{item.children}</NavLink>;
+      })}
+    </div>
+  );
+};

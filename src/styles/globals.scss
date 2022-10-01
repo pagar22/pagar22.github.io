@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "/src/styles/home.scss";
 
 //theme
-@import "/src/styles/theme/navlink.scss";
+@import "/src/styles/fonts.scss";
 
 //components
 @import "/src/styles/components/navbar.scss";
+@import "/src/styles/layouts/base-layout.scss";
 
 html,
 body {
@@ -17,4 +17,9 @@ body {
 
 a {
   @apply text-inherit no-underline;
+}
+
+.main {
+  @apply flex flex-1 flex-col justify-center items-center;
+  @apply h-4/5 p-2;
 }

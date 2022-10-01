@@ -5,7 +5,12 @@ export interface NavLinkProps {
 
 export const NavLink = ({ children, link }: NavLinkProps) => {
   return (
-    <a className={"nav-text"} href={link}>
+    <a
+      className={
+        "nav-text text-lg hover:italic hover:font-semibold hover-text-gradient"
+      }
+      href={link}
+    >
       {children}
     </a>
   );
