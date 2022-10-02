@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     <BaseLayout>
       <main className={"main"}>
         <h1 className={"title"}>
-          <span className={"text-indigo-500"}>Shuuuush,</span> there&apos;s more
+          <span className={"text-gradient"}>Shuuuush,</span> there&apos;s more
           coming soon.
         </h1>
       </main>

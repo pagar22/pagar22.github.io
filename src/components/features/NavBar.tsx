@@ -7,7 +7,7 @@ const NavBarItems: NavLinkProps[] = [
     children: "About",
   },
   {
-    link: "/resume",
+    link: "/#",
     children: "Resume",
   },
   {
@@ -30,6 +30,9 @@ export const NavBar = () => {
   useEffect(() => {
     setBurgerIcon(burgerOpen ? "/close.svg" : "/burger.svg");
   }, [burgerOpen]);
+  const toggleBurger = () => {
+    setBurgerOpen(!burgerOpen);
+  };
 
   const populateNavigationItems = (
     items: NavLinkProps[],
@@ -52,13 +55,13 @@ export const NavBar = () => {
         </div>
         <div
           className={`burger ${burgerOpen ? `` : `p-1`}`}
-          onClick={() => setBurgerOpen(!burgerOpen)}
+          onClick={toggleBurger}
         >
           <img className="w-8" src={burgerIcon} alt="burger" />
         </div>
       </div>
       {burgerOpen && (
-        <div className={"modal-container"}>
+        <div className={"modal-container"} onClick={toggleBurger}>
           <div className={"modal"}>
             {populateNavigationItems(NavBarItems, "text-black text-3xl py-6")}
           </div>
