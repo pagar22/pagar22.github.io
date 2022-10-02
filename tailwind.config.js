@@ -5,7 +5,16 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "gradient-blue": "#5995ef",
+        "gradient-purple": "#625b94",
+      },
+      screens: {
+        "-lg": { max: "1023px" },
+        "-md": { max: "767px" },
+      },
+    },
   },
   plugins: [],
 };

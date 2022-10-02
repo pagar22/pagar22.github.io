@@ -1,0 +1,14 @@
+.title {
+  @apply m-0 leading-normal text-6xl text-center;
+  @apply -md:text-4xl -md:leading-normal;
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text 
+    bg-gradient-to-br from-gradient-blue to-gradient-purple;
+}
+
+.hover-text-gradient {
+  @apply hover:text-transparent hover:bg-clip-text 
+    hover:bg-gradient-to-br from-gradient-blue to-gradient-purple;
+}

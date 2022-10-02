@@ -2,13 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "/src/styles/home.scss";
+//theme
+@import "/src/styles/fonts.scss";
+
+//components
+@import "/src/styles/components/navbar.scss";
+@import "/src/styles/layouts/base-layout.scss";
 
 html,
 body {
   @apply p-0 m-0 text-white bg-black;
+  @apply font-mono;
 }
 
 a {
   @apply text-inherit no-underline;
+}
+
+.main {
+  @apply flex flex-1 flex-col justify-center items-center;
+  @apply h-4/5 p-2;
 }
