@@ -22,7 +22,7 @@ export const Socials = () => {
     <div className="flex flex-row items-end mt-16 mb-8 p-2">
       {socialsItems.map((item, index) => {
         return (
-          <a href={item.href} target="_blank">
+          <a key={index} href={item.href} target="_blank" rel="noreferrer">
             <img
               className="w-8 mx-4"
               src={`/socials/${item.title}.svg`}
