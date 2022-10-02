@@ -1,14 +1,13 @@
 export interface NavLinkProps {
+  className?: string;
   children: JSX.Element | string;
   link: string;
 }
 
-export const NavLink = ({ children, link }: NavLinkProps) => {
+export const NavLink = ({ className, children, link }: NavLinkProps) => {
   return (
     <a
-      className={
-        "nav-text text-lg hover:italic hover:font-semibold hover-text-gradient"
-      }
+      className={`${className} p-1 hover:italic hover:font-semibold hover-text-gradient`}
       href={link}
     >
       {children}

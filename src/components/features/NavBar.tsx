@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NavLinkProps, NavLink } from "../theme/NavLink";
 
 const NavBarItems: NavLinkProps[] = [
@@ -24,18 +25,45 @@ const NavBarItems: NavLinkProps[] = [
 ];
 
 export const NavBar = () => {
+  const [burgerOpen, setBurgerOpen] = useState(false);
+  const [burgerIcon, setBurgerIcon] = useState("/burger.svg");
+  useEffect(() => {
+    setBurgerIcon(burgerOpen ? "/close.svg" : "/burger.svg");
+  }, [burgerOpen]);
+
+  const populateNavigationItems = (
+    items: NavLinkProps[],
+    className?: string
+  ) => {
+    return items?.map((item, index) => {
+      return (
+        <NavLink className={className} key={index} link={item.link}>
+          {item.children}
+        </NavLink>
+      );
+    });
+  };
+
   return (
     <>
-      <div className="navbar">
-        <div className="navbar-container">
-          {NavBarItems?.map((item) => {
-            return <NavLink link={item.link}>{item.children}</NavLink>;
-          })}
+      <div className="navbar-container">
+        <div className="navbar">
+          {populateNavigationItems(NavBarItems, "text-lg")}
         </div>
-        <div className="burger">
-          <img className="w-8" src="/burger.svg" alt="ramen" />
+        <div
+          className={`burger ${burgerOpen ? `` : `p-1`}`}
+          onClick={() => setBurgerOpen(!burgerOpen)}
+        >
+          <img className="w-8" src={burgerIcon} alt="burger" />
         </div>
       </div>
+      {burgerOpen && (
+        <div className={"modal-container"}>
+          <div className={"modal"}>
+            {populateNavigationItems(NavBarItems, "text-black text-3xl py-6")}
+          </div>
+        </div>
+      )}
     </>
   );
 };
