@@ -25,10 +25,17 @@ const NavBarItems: NavLinkProps[] = [
 
 export const NavBar = () => {
   return (
-    <div className="navbar">
-      {NavBarItems?.map((item) => {
-        return <NavLink link={item.link}>{item.children}</NavLink>;
-      })}
-    </div>
+    <>
+      <div className="navbar">
+        <div className="navbar-container">
+          {NavBarItems?.map((item) => {
+            return <NavLink link={item.link}>{item.children}</NavLink>;
+          })}
+        </div>
+        <div className="burger">
+          <img className="w-8" src="/burger.svg" alt="ramen" />
+        </div>
+      </div>
+    </>
   );
 };
