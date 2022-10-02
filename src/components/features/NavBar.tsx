@@ -7,7 +7,7 @@ const NavBarItems: NavLinkProps[] = [
     children: "About",
   },
   {
-    link: "/#",
+    link: "/resume",
     children: "Resume",
   },
   {
