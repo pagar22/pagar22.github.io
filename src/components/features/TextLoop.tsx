@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "animate.css";
 
 interface TextLoopProps {
   className?: string;
@@ -20,7 +21,12 @@ export const TextLoop = ({ className, time, sentences }: TextLoopProps) => {
   });
   return (
     <div>
-      <h1 className={`${className} text-lg mt-4`}>{sentences[index]}</h1>
+      <h1
+        className={`${className} animate__animated animate__animate__fadeInUp text-lg mt-4`}
+      >
+        {sentences[index]}
+      </h1>
+      <h1 className="animate__animated animate__bounce">Helloo</h1>
     </div>
   );
 };
