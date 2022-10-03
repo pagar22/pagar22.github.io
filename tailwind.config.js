@@ -16,10 +16,11 @@ module.exports = {
         "-sm": { max: "639px" },
       },
       maxWidth: {
-        "2xs": "320px",
+        "2xs": "300px",
+        "3xs": "280px",
       },
       minWidth: {
-        "2xs": "320px",
+        "2xs": "300px",
       },
     },
   },

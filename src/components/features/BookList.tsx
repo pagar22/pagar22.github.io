@@ -7,7 +7,7 @@ const BookListItems: BookListProps[] = books;
 
 export const BookList = () => {
   return (
-    <ScrollList title={"My Favourite Books"}>
+    <ScrollList title={"Favourite Books"}>
       {BookListItems.map((item) => {
         return (
           <div className="bookitem">
@@ -16,14 +16,14 @@ export const BookList = () => {
               src={item.image ? item.image : `books/default-book.png`}
               alt={item.title}
             />
-            <div className="flex flex-col justify-evenly">
+            <div className="flex flex-col justify-between">
               <p className="bookitem-title">{item.title.toUpperCase()}</p>
               <p className="bookitem-author">- {item.author}</p>
               <div className="flex flex-row justify-between items-center">
                 <p className="flex-1 text-sm">{item.category}</p>
-                <p className="flex-1 text-4xl text-center">
+                {/* <p className="flex-1 text-4xl text-center">
                   {getEmojiFromRating(item.rating)}
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
