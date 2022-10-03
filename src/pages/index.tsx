@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Socials } from "../components/features/Socials";
+import { TextLoop } from "../components/features/TextLoop";
 import { BaseLayout } from "../layouts/BaseLayout";
 
 const Home: NextPage = () => {
@@ -16,7 +17,14 @@ const Home: NextPage = () => {
           <h1 className={"title"}>
             Hello, I&apos;m <span className={"text-gradient"}>Aaryan</span>!
           </h1>
-          <p className="text-lg mt-4">I push buttons.</p>
+          <TextLoop
+            time={3000}
+            sentences={[
+              "I push buttons.",
+              "I get my PRs declined.",
+              "I push buttons again.",
+            ]}
+          />
           <Socials />
         </main>
       </BaseLayout>
