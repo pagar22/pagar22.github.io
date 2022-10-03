@@ -1,4 +1,4 @@
-const socialsItems = [
+const SocialsItems = [
   {
     title: "github",
     href: "https://www.github.com/pagar22",
@@ -20,7 +20,7 @@ const socialsItems = [
 export const Socials = () => {
   return (
     <div className="flex flex-row items-end mt-16 mb-8 p-2">
-      {socialsItems.map((item, index) => {
+      {SocialsItems.map((item, index) => {
         return (
           <a key={index} href={item.href} target="_blank" rel="noreferrer">
             <img
