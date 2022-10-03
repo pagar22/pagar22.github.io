@@ -8,9 +8,9 @@ const BookListItems: BookListProps[] = books;
 export const BookList = () => {
   return (
     <ScrollList title={"Favourite Books"}>
-      {BookListItems.map((item) => {
+      {BookListItems.map((item, index) => {
         return (
-          <div className="bookitem">
+          <div key={index} className="bookitem">
             <img
               className="w-24"
               src={item.image ? item.image : `books/default-book.png`}
