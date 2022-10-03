@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
+import { BookList } from "../components/features/BookList";
+import { QuotesList } from "../components/features/QuotesList";
 import { BaseLayout } from "../layouts/BaseLayout";
 
 const Home: NextPage = () => {
   return (
     <BaseLayout>
       <main className={"main"}>
-        <h1 className={"title"}>
-          <span className={"text-gradient"}>Weeew,</span> there&apos;s more
-          coming soon.
-        </h1>
+        <BookList />
+        <QuotesList />
       </main>
     </BaseLayout>
   );

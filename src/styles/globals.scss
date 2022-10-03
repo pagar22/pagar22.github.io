@@ -4,10 +4,12 @@
 
 //theme
 @import "/src/styles/fonts.scss";
+@import "/src/styles/scroll-lists.scss";
 
 //components
 @import "/src/styles/components/navbar.scss";
 @import "/src/styles/layouts/base-layout.scss";
+@import "/src/styles/components/booklist.scss";
 
 html,
 body {

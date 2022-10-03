@@ -1,0 +1,14 @@
+.bookitem {
+  @apply flex flex-row p-3 space-x-4;
+  @apply min-w-2xs max-w-2xs;
+  @apply border-2 border-white rounded-xl;
+  @apply overflow-hidden;
+}
+
+.bookitem-title {
+  @apply text-lg font-semibold text-gradient;
+}
+
+.bookitem-author {
+  @apply text-xs text-gray-400 font-medium;
+}
