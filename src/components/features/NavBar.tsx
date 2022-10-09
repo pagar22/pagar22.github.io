@@ -7,8 +7,9 @@ const NavBarItems: NavLinkProps[] = [
     children: "About",
   },
   {
-    link: "/resume",
+    link: "/AaryanPagar.pdf",
     children: "Resume",
+    openInNewTab: true,
   },
   {
     link: "/",
@@ -40,7 +41,12 @@ export const NavBar = () => {
   ) => {
     return items?.map((item, index) => {
       return (
-        <NavLink className={className} key={index} link={item.link}>
+        <NavLink
+          className={className}
+          key={index}
+          link={item.link}
+          openInNewTab={item.openInNewTab}
+        >
           {item.children}
         </NavLink>
       );

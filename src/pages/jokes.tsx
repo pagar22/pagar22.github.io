@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                 alt="Me!"
               />
               <p className="text-center">
-                Kidding I have extreme self-confidence :')
+                Jk I have extreme self-confidence :&apos;)
               </p>
             </div>
           }

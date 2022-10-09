@@ -11,7 +11,7 @@ export const FlipCard = ({
   childrenFront,
   childrenBack,
 }: FlipCardProps) => {
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(true);
   const toggleFlipped = () => setFlipped(!flipped);
   return (
     <div
