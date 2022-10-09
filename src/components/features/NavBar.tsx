@@ -13,7 +13,7 @@ const NavBarItems: NavLinkProps[] = [
   },
   {
     link: "/",
-    children: <img width={"40px"} src="/ramen.ico" alt="index" />,
+    children: <img width={"60px"} src="/ramen.png" alt="index" />,
   },
   {
     link: "/read",
@@ -25,6 +25,29 @@ const NavBarItems: NavLinkProps[] = [
   },
 ];
 
+const populateNavigationItems = (items: NavLinkProps[], className?: string) => {
+  const { pathname } = useRouter();
+  return items?.map((item, index) => {
+    const ramenSpecial = pathname === item.link && item.link === "/";
+    return (
+      <NavLink
+        className={`${className} ${
+          pathname === item.link ? `navbar-selected` : ``
+        }`}
+        key={index}
+        link={item.link}
+        openInNewTab={item.openInNewTab}
+      >
+        {ramenSpecial ? (
+          <img width={"70px"} src="/ramen.gif" alt="index" />
+        ) : (
+          item.children
+        )}
+      </NavLink>
+    );
+  });
+};
+
 export const NavBar = () => {
   const [burgerOpen, setBurgerOpen] = useState(false);
   const [burgerIcon, setBurgerIcon] = useState("/burger.svg");
@@ -33,27 +56,6 @@ export const NavBar = () => {
   }, [burgerOpen]);
   const toggleBurger = () => {
     setBurgerOpen(!burgerOpen);
-  };
-
-  const { pathname } = useRouter();
-  const populateNavigationItems = (
-    items: NavLinkProps[],
-    className?: string
-  ) => {
-    return items?.map((item, index) => {
-      return (
-        <NavLink
-          className={`${className} ${
-            pathname === item.link ? `navbar-selected` : ``
-          }`}
-          key={index}
-          link={item.link}
-          openInNewTab={item.openInNewTab}
-        >
-          {item.children}
-        </NavLink>
-      );
-    });
   };
 
   return (
