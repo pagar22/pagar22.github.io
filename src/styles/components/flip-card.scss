@@ -1,0 +1,35 @@
+.flip-conatiner {
+  @apply relative inline-block;
+  @apply m-8 p-8 w-fit -lg:w-80;
+
+  > .front,
+  > .back {
+    @apply block h-96 p-8;
+    @apply rounded-xl cursor-pointer;
+    @apply bg-gradient-to-br from-gradient-blue to-gradient-purple;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 1s;
+    transition-property: transform, opacity;
+  }
+  > .front {
+    @apply flex items-center;
+    @apply text-white text-center;
+    transform: rotateY(0deg);
+  }
+  > .back {
+    @apply absolute block w-full h-full p-8;
+    @apply opacity-0 top-0 left-0;
+    transform: rotateY(-180deg);
+  }
+}
+
+.isFlipped {
+  > .front {
+    @apply opacity-0;
+    transform: rotateY(180deg);
+  }
+  > .back {
+    @apply opacity-100;
+    transform: rotateY(0deg);
+  }
+}

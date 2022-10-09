@@ -1,17 +1,27 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import { BaseLayout } from "../layouts/BaseLayout";
 
-const Home: NextPage = () => {
+const Resume: NextPage = () => {
   return (
     <BaseLayout>
       <main className={"main"}>
-        <h1 className={"title"}>
-          <span className={"text-gradient"}>Hoppala,</span> there&apos;s more
-          coming soon.
+        <iframe
+          className={"w-4/5 h-5/6 -lg:hidden"}
+          src="/AaryanPagar.pdf#toolbar=0"
+          height="500px"
+        />
+        <h1 className={"text-3xl text-center lg:hidden"}>
+          View my resume{" "}
+          <span className={"text-gradient font-semibold"}>
+            <a href={"/AaryanPagar.pdf"} target={"_blank"} rel={"noreferrer"}>
+              here
+            </a>
+          </span>
+          !
         </h1>
       </main>
     </BaseLayout>
   );
 };
 
-export default Home;
+export default Resume;
