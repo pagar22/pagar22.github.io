@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 interface FlipCardProps {
-  className?: String;
+  className?: string;
   childrenFront: JSX.Element;
   childrenBack: JSX.Element;
 }
@@ -20,7 +20,7 @@ export const FlipCard = ({
       <div className={`front`} onClick={toggleFlipped}>
         {childrenFront}
       </div>
-      <div className="back" onClick={toggleFlipped}>
+      <div className={"back"} onClick={toggleFlipped}>
         {childrenBack}
       </div>
     </div>

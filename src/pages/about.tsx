@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { BaseLayout } from "../layouts/BaseLayout";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <BaseLayout>
       <main className={"main"}>
@@ -14,4 +14,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;

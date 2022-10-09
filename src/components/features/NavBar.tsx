@@ -55,15 +55,15 @@ export const NavBar = () => {
 
   return (
     <>
-      <div className="navbar-container">
-        <div className="navbar">
+      <div className={"navbar-container"}>
+        <div className={"navbar"}>
           {populateNavigationItems(NavBarItems, "text-lg")}
         </div>
         <div
           className={`burger ${burgerOpen ? `` : `p-1`}`}
           onClick={toggleBurger}
         >
-          <img className="w-8" src={burgerIcon} alt="burger" />
+          <img className="w-8" src={burgerIcon} alt={"burger"} />
         </div>
       </div>
       {burgerOpen && (

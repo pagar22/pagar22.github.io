@@ -16,6 +16,7 @@ export const NavLink = ({
       className={`${className} p-1 hover:italic hover:font-semibold hover-text-gradient`}
       href={link}
       target={openInNewTab ? "_blank" : ""}
+      rel={"noreferrer"}
     >
       {children}
     </a>
