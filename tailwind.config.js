@@ -21,9 +21,16 @@ module.exports = {
       },
       minWidth: {
         "2xs": "300px",
+        "3xs": "240px",
+        "4xs": "200px",
       },
       fontFamily: {
         // sans: ["Oswald"],
+        poppins: ["sans-serif"],
+      },
+      fontSize: {
+        hindi7xl: "4.7rem",
+        hindi4xl: "2.7rem",
       },
     },
   },

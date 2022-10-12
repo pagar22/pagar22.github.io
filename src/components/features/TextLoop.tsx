@@ -22,7 +22,6 @@ export const TextLoop = ({ className, sentences }: TextLoopProps) => {
 
   useEffect(() => {
     setAnimated(!animated);
-    console.log(animated);
   }, [index]);
 
   return (
@@ -30,7 +29,7 @@ export const TextLoop = ({ className, sentences }: TextLoopProps) => {
       <h1
         className={`text-lg mt-4 opacity-0 ${
           animated ? `animated-text` : `animated-text2`
-        }`}
+        } ${className}`}
       >
         {sentences[index]}
       </h1>

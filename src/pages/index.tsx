@@ -15,7 +15,11 @@ const Home: NextPage = () => {
       <BaseLayout>
         <main className={"main"}>
           <h1 className={"title"}>
-            Hello, I&apos;m <span className={"text-gradient"}>Aaryan</span>!
+            Hello, I&apos;m{" "}
+            <span className={"text-gradient text-hindi7xl -md:text-hindi4xl"}>
+              आर्यन
+            </span>{" "}
+            !
           </h1>
           <TextLoop
             sentences={[
