@@ -12,7 +12,6 @@ module.exports = {
         "gradient-purple": "#625b94",
       },
       fontFamily: {
-        // sans: ["Oswald"],
         mont: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
@@ -30,8 +29,6 @@ module.exports = {
       },
       minWidth: {
         "2xs": "300px",
-        "3xs": "240px",
-        "4xs": "200px",
       },
     },
   },
