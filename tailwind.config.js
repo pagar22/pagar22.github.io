@@ -22,6 +22,9 @@ module.exports = {
       minWidth: {
         "2xs": "300px",
       },
+      fontFamily: {
+        // sans: ["Oswald"],
+      },
     },
   },
   plugins: [],

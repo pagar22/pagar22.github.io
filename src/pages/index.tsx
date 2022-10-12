@@ -18,7 +18,6 @@ const Home: NextPage = () => {
             Hello, I&apos;m <span className={"text-gradient"}>Aaryan</span>!
           </h1>
           <TextLoop
-            time={3000}
             sentences={[
               "I push buttons.",
               "I get my PRs declined.",
