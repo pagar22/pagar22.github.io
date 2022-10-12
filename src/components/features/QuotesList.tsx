@@ -10,7 +10,9 @@ export const QuotesList = () => {
         return (
           <div
             key={index}
-            className="text-sm p-3 border-2 border-white min-w-2xs max-w-2xs overflow-hidden rounded-xl leading-7"
+            className={
+              "text-sm p-3 border-2 border-white min-w-2xs max-w-2xs overflow-hidden rounded-xl leading-7"
+            }
           >
             {item}
           </div>

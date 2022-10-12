@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { NavLinkProps, NavLink } from "../theme/NavLink";
 
@@ -34,13 +35,21 @@ export const NavBar = () => {
     setBurgerOpen(!burgerOpen);
   };
 
+  const { pathname } = useRouter();
   const populateNavigationItems = (
     items: NavLinkProps[],
     className?: string
   ) => {
     return items?.map((item, index) => {
       return (
-        <NavLink className={className} key={index} link={item.link}>
+        <NavLink
+          className={`${className} ${
+            pathname === item.link ? `navbar-selected` : ``
+          }`}
+          key={index}
+          link={item.link}
+          openInNewTab={item.openInNewTab}
+        >
           {item.children}
         </NavLink>
       );
@@ -49,15 +58,15 @@ export const NavBar = () => {
 
   return (
     <>
-      <div className="navbar-container">
-        <div className="navbar">
+      <div className={"navbar-container"}>
+        <div className={"navbar"}>
           {populateNavigationItems(NavBarItems, "text-lg")}
         </div>
         <div
           className={`burger ${burgerOpen ? `` : `p-1`}`}
           onClick={toggleBurger}
         >
-          <img className="w-8" src={burgerIcon} alt="burger" />
+          <img className="w-8" src={burgerIcon} alt={"burger"} />
         </div>
       </div>
       {burgerOpen && (

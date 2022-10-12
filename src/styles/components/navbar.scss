@@ -12,6 +12,10 @@
   @apply -lg:hidden;
 }
 
+.navbar-selected {
+  @apply italic font-semibold text-gradient;
+}
+
 .burger {
   @apply lg:hidden;
 }

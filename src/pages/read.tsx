@@ -3,7 +3,7 @@ import { BookList } from "../components/features/BookList";
 import { QuotesList } from "../components/features/QuotesList";
 import { BaseLayout } from "../layouts/BaseLayout";
 
-const Home: NextPage = () => {
+const Read: NextPage = () => {
   return (
     <BaseLayout>
       <main className={"main"}>
@@ -14,4 +14,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Read;
