@@ -7,7 +7,7 @@ interface TextLoopProps {
 
 export const TextLoop = ({ sentences, duration = 5 }: TextLoopProps) => {
   const [index, setIndex] = useState(0);
-  const animateClass = `text-lg mt-4 animate-[animated-fly-loop_${duration}s_infinite]`;
+  const animateClass = `text-lg mt-4 animate-[animated-fly-loop_5s_infinite]`;
   useEffect(() => {
     if (sentences.length > 1) {
       const setIndexValue = index === sentences.length - 1 ? 0 : index + 1;
