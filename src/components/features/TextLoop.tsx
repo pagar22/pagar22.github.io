@@ -15,7 +15,7 @@ export const TextLoop = ({ className, sentences }: TextLoopProps) => {
       const setIndexValue = index === sentences.length - 1 ? 0 : index + 1;
       const interval = setInterval(() => {
         setIndex(setIndexValue);
-      }, 5000);
+      }, 4000);
       return () => clearInterval(interval);
     }
   });

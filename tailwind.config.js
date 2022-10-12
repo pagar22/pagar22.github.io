@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -26,7 +27,7 @@ module.exports = {
       },
       fontFamily: {
         // sans: ["Oswald"],
-        poppins: ["sans-serif"],
+        mont: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         hindi7xl: "4.7rem",

@@ -11,7 +11,7 @@ export const QuotesList = () => {
           <div
             key={index}
             className={
-              "text-sm p-3 border-2 border-white min-w-2xs max-w-2xs overflow-hidden rounded-xl leading-7"
+              "text-md p-3 border-2 border-white min-w-2xs max-w-2xs overflow-hidden rounded-xl leading-7"
             }
           >
             {item}
