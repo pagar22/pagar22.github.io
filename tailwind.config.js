@@ -11,6 +11,14 @@ module.exports = {
         "gradient-blue": "#5995ef",
         "gradient-purple": "#625b94",
       },
+      fontFamily: {
+        // sans: ["Oswald"],
+        mont: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        hindi7xl: "4.7rem",
+        hindi4xl: "2.7rem",
+      },
       screens: {
         "-lg": { max: "1023px" },
         "-md": { max: "767px" },
@@ -24,14 +32,6 @@ module.exports = {
         "2xs": "300px",
         "3xs": "240px",
         "4xs": "200px",
-      },
-      fontFamily: {
-        // sans: ["Oswald"],
-        mont: ["Montserrat", ...defaultTheme.fontFamily.sans],
-      },
-      fontSize: {
-        hindi7xl: "4.7rem",
-        hindi4xl: "2.7rem",
       },
     },
   },

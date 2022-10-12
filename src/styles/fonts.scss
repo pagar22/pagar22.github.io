@@ -8,38 +8,6 @@
     bg-gradient-to-br from-gradient-blue to-gradient-purple;
 }
 
-.animated-text {
-  animation: animated-fly-loop-1 4s;
-}
-
-.animated-text2 {
-  animation: animated-fly-loop-2 4s;
-}
-
-@keyframes animated-fly-loop-1 {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes animated-fly-loop-2 {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
 .hover-text-gradient {
   @apply hover:text-transparent hover:bg-clip-text 
     hover:bg-gradient-to-br from-gradient-blue to-gradient-purple;
