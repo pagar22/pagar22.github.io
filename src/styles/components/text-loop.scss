@@ -1,0 +1,10 @@
+@keyframes animated-fly-loop {
+  0%,
+  100% {
+    opacity: 0%;
+  }
+  50%,
+  80% {
+    opacity: 100%;
+  }
+}

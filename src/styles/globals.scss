@@ -11,11 +11,12 @@
 @import "/src/styles/layouts/base-layout.scss";
 @import "/src/styles/components/booklist.scss";
 @import "/src/styles/components/flip-card.scss";
+@import "/src/styles/components/text-loop.scss";
 
 html,
 body {
   @apply p-0 m-0 text-white bg-black;
-  @apply font-mono;
+  @apply font-mont;
 }
 
 a {

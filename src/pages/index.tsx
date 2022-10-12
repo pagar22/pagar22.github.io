@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useState } from "react";
 import { Socials } from "../components/features/Socials";
+import { TextLoop } from "../components/features/TextLoop";
 import { BaseLayout } from "../layouts/BaseLayout";
 
 const Home: NextPage = () => {
+  const [hindi, setHindi] = useState(true);
+  const toggleHindi = () => setHindi(!hindi);
   return (
     <>
       <Head>
@@ -14,9 +18,22 @@ const Home: NextPage = () => {
       <BaseLayout>
         <main className={"main"}>
           <h1 className={"title"}>
-            Hello, I&apos;m <span className={"text-gradient"}>Aaryan</span>!
+            Hello, I&apos;m{" "}
+            <span
+              className={"cursor-pointer text-gradient"}
+              onClick={toggleHindi}
+            >
+              {hindi ? `आर्यन ` : "Aaryan"}
+            </span>
+            !
           </h1>
-          <p className="text-lg mt-4">I push buttons.</p>
+          <TextLoop
+            sentences={[
+              "I push buttons.",
+              "I get my PRs declined.",
+              "I push buttons again.",
+            ]}
+          />
           <Socials />
         </main>
       </BaseLayout>

@@ -11,16 +11,9 @@ const Jokes: NextPage = () => {
             <h1 className={"text-2xl -md:text-xl"}>Flip to reveal a joke.</h1>
           }
           childrenBack={
-            <div
-              className={"flex flex-col justify-between items-center space-y-4"}
-            >
-              <img
-                className={"w-56 rounded-xl"}
-                width={200}
-                src={"/me.png"}
-                alt={"Me!"}
-              />
-              <p className={"text-center"}>
+            <div className={"flex flex-col justify-between items-center"}>
+              <img className={"w-56 rounded-xl"} src={"/me.png"} alt={"Me!"} />
+              <p className={"mt-4 text-center"}>
                 Jk I have extreme self-confidence :&apos;)
               </p>
             </div>
