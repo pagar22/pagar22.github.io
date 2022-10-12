@@ -8,6 +8,7 @@ interface TextLoopProps {
 
 export const TextLoop = ({ className, sentences }: TextLoopProps) => {
   const [index, setIndex] = useState(0);
+  const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
     if (sentences.length > 1) {
@@ -18,9 +19,21 @@ export const TextLoop = ({ className, sentences }: TextLoopProps) => {
       return () => clearInterval(interval);
     }
   });
+
+  useEffect(() => {
+    setAnimated(!animated);
+    console.log(animated);
+  }, [index]);
+
   return (
     <div>
-      <h1 className={"text-lg mt-4 animated-text"}>{sentences[index]}</h1>
+      <h1
+        className={`text-lg mt-4 opacity-0 ${
+          animated ? `animated-text` : `animated-text2`
+        }`}
+      >
+        {sentences[index]}
+      </h1>
     </div>
   );
 };

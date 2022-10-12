@@ -9,10 +9,26 @@
 }
 
 .animated-text {
-  animation: animated-fly-loop 5s infinite;
+  animation: animated-fly-loop-1 5s;
 }
 
-@keyframes animated-fly-loop {
+.animated-text2 {
+  animation: animated-fly-loop-2 5s;
+}
+
+@keyframes animated-fly-loop-1 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes animated-fly-loop-2 {
   0% {
     opacity: 0%;
   }
