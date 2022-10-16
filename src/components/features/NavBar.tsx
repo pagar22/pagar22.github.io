@@ -4,8 +4,8 @@ import { NavLinkProps, NavLink } from "../theme/NavLink";
 
 const NavBarItems: NavLinkProps[] = [
   {
-    link: "/about",
-    children: "About",
+    link: "/projects",
+    children: "Projects",
   },
   {
     link: "/resume",
