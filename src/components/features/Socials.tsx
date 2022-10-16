@@ -9,7 +9,7 @@ export const Socials = () => {
         return (
           <a key={index} href={item.href} target={"_blank"} rel={"noreferrer"}>
             <img
-              className={"w-8 mx-4"}
+              className={"w-8 mx-4 hover:-translate-y-2"}
               src={`/socials/${item.title}.svg`}
               alt={item.title}
             />
