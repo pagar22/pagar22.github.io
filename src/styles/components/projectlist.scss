@@ -4,6 +4,7 @@
 }
 .project {
   @apply max-w-xs min-w-xs p-6;
+  @apply -sm:max-w-2xs -sm:min-w-2xs;
   @apply flex flex-col items-center space-y-4;
   @apply border-2 border-white rounded-lg;
 }

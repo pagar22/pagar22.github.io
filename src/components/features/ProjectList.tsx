@@ -12,6 +12,13 @@ export const ProjectList = () => {
               <h1 className={"text-2xl text-gradient font-bold"}>
                 {item.title}
               </h1>
+              <NavLink className={"my-2"} link={item.github} openInNewTab>
+                <img
+                  className={"w-10"}
+                  src={"/socials/github.svg"}
+                  alt={"github"}
+                />
+              </NavLink>
               <p className={"text-md"}>{item.description}</p>
               <hr className={"w-full mb-4"} />
               <div className={"flex flex-row items-center"}>
@@ -24,17 +31,6 @@ export const ProjectList = () => {
                     );
                   })}
                 </div>
-                <NavLink
-                  className={"self-end my-2"}
-                  link={item.github}
-                  openInNewTab
-                >
-                  <img
-                    className={"w-20"}
-                    src={"/socials/github.svg"}
-                    alt={"github"}
-                  />
-                </NavLink>
               </div>
             </div>
           );
