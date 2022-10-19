@@ -2,41 +2,33 @@ export const projects = [
   {
     title: "Kiwi",
     description:
-      "Studied the shortcomings of a typical high school student in managing and coordinating their schoolwork to create a virtual learning environment delivered as an android mobile application.",
-    technologies: ["Java", "Firebase", "XML", "Gradle", "Systems Design"],
-    year: "2019",
+      "Delivered an android mobile application for my high school that allows students to organize classrooms and set deadlines for assignments and tests among other features like note taking and setting reminders that are crucial for creating a systematized approach to learning.",
+    technologies: ["Java", "Kotlin", "XML", "Gradle", "Android Studio"],
+    year: "2020",
     github: "https://github.com/pagar22/kiwi",
   },
   {
-    title: "Kiwi",
+    title: "VoucherMe",
     description:
-      "Created an android application for the students in my high school to manage their daily schedule, classrooms and tests along with other elimentary features needed for a systematic approach to learning.",
-    technologies: ["Java", "Firebase", "XML", "Gradle", "Systems Design"],
-    year: "2019",
-    github: "https://github.com/pagar22/kiwi",
+      "Developed a social marketing website using Django for businesses to digitally post about latest schemes, offers, promocodes, etc. Conducted numerous rounds of usability testing to evaluate the correlation between consumer engagement and marketing strategies.",
+    technologies: ["Python", "Django", "JavaScript", "AJAX", "HTML", "CSS"],
+    year: "2020",
+    github: "https://github.com/pagar22/voucher-me-project",
   },
   {
-    title: "Kiwi",
+    title: "MyMommy",
     description:
-      "Created an android application for the students in my high school to manage their daily schedule, classrooms and tests along with other elimentary features needed for a systematic approach to learning.",
-    technologies: ["Java", "Firebase", "XML", "Gradle", "Systems Design"],
-    year: "2019",
-    github: "https://github.com/pagar22/kiwi",
+      "Developed an android application as part of my university's admission project. The app allows households to manage and assign their daily tasks between members while gamifying the chores through competitive yet engaging time-based tournaments.",
+    technologies: ["Java", "Firebase", "Systems Design", "XML", "JUnit"],
+    year: "2021",
+    github: "https://github.com/pagar22/code-challenge-mymommy",
   },
   {
-    title: "Kiwi",
+    title: "Trees that Reminisce ",
     description:
-      "Created an android application for the students in my high school to manage their daily schedule, classrooms and tests along with other elimentary features needed for a systematic approach to learning.",
-    technologies: ["Java", "Firebase", "XML", "Gradle", "Systems Design"],
-    year: "2019",
-    github: "https://github.com/pagar22/kiwi",
-  },
-  {
-    title: "Kiwi",
-    description:
-      "Created an android application for the students in my high school to manage their daily schedule, classrooms and tests along with other elimentary features needed for a systematic approach to learning.",
-    technologies: ["Java", "Firebase", "XML", "Gradle", "Systems Design"],
-    year: "2019",
-    github: "https://github.com/pagar22/kiwi",
+      "A learning-based project aimed at levaraging the properties of self-balancing BSTs, particularly, the AVL & Red and Black Trees and applying them on memoization use cases such as mazes and speedy probability evaluators. Used numerous design patterns for efficient applicability.",
+    technologies: ["Java", "TestNG", "Mockito", "Maven", "Design Patterns"],
+    year: "2022",
+    github: "https://github.com/pagar22/trees-that-reminisce",
   },
 ];
