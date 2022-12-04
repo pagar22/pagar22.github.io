@@ -27,7 +27,8 @@
 }
 
 .modal {
-  @apply w-1/3 h-full p-8 pb-28 bg-white;
-  @apply flex flex-col items-end overflow-y-scroll;
+  @apply w-1/3 h-full p-8 pb-28 -right-full bg-white;
+  @apply absolute flex flex-col items-end overflow-y-scroll;
   @apply -md:w-full -md:items-center;
+  @apply animate-slide-left;
 }

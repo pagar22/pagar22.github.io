@@ -31,6 +31,14 @@ module.exports = {
         "2xs": "300px",
         xs: "319px",
       },
+      keyframes: {
+        slide: {
+          "100%": { right: 0 },
+        },
+      },
+      animation: {
+        "slide-left": "slide 1s forwards",
+      },
     },
   },
   plugins: [],
