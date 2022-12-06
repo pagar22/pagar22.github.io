@@ -35,11 +35,4 @@ export const books: BookListProps[] = [
     category: "Lifestyle",
     rating: 90,
   },
-  {
-    title: "Rich Dad Poor Dad",
-    author: "Robert T. Kiyosaki",
-    image: "/books/rich-dad-poor-dad.jpeg",
-    category: "Finance",
-    rating: 40,
-  },
 ];
