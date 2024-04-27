@@ -6,9 +6,8 @@ const Resume: NextPage = () => {
     <BaseLayout>
       <main className={"main"}>
         <iframe
-          className={"w-4/5 h-5/6 -lg:hidden"}
+          className={"w-3/5 h-5/6 -lg:hidden"}
           src="/AaryanPagar.pdf#toolbar=0"
-          height="500px"
         />
         <h1 className={"text-3xl text-center lg:hidden"}>
           View my resume{" "}
